@@ -17,7 +17,7 @@ if (navigator.serviceWorker) {
 
 function start() {
   const params = new URLSearchParams(document.location.search)
-  const radius = params.get('r')
+  const radius = params.get("r")
 
   document.getElementById("radius").innerHTML =
     "The radius is: " + radius + " cm."
@@ -25,9 +25,4 @@ function start() {
   const volume = (4.0 * Math.PI * radius ** 3) / 3.0
   document.getElementById("volume-of-sphere").innerHTML =
     "The volume of the sphere is: " + volume.toFixed(2) + " cm³."
-
-
 }
-
-
-
